@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">Resource Example</string>
+	<color name="opaque_red">#f00</color>
+	<string name="hello">Hello!</string>
+</resources>
