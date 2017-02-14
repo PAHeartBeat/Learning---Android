@@ -1,0 +1,16 @@
+# Module level .gitignore Setting
+# ===============================
+
+# Andorid Studio Predefine .gitignore for Gradel Project
+# ------------------------------------------------------
+/build
+
+# My Own define for .gitignore for Android Stuiod Project
+# ------------------------------------------------------
+!/libs
+/Pacakge
+ref_*
+ref*
+*.apk
+*.aar
+*.jar

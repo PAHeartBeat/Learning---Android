@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/broadcastreceiverexample" />
             <option value="$PROJECT_DIR$/helloworld" />
             <option value="$PROJECT_DIR$/resourceexample" />
             <option value="$PROJECT_DIR$/serviceexample" />
