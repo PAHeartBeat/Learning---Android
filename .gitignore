@@ -1,0 +1,31 @@
+# Project level .gitignore Setting
+# ================================
+
+# Andorid Studio Predefine .gitignore for Gradel Project
+# ------------------------------------------------------
+#*.iml
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/build
+/build/
+/captures
+.gradle
+/gradle
+.externalNativeBuild
+
+
+# My Own define for .gitignore for Android Stuiod Project
+# ------------------------------------------------------
+!/*/libs
+/Pacakge
+/*/Pacakge
+ref_*
+ref*
+*.apk
+*.aar
+*.jar
+
+# My define to ingore MAC OSX system file
+# ---------------------------------------
+.DS_Store
