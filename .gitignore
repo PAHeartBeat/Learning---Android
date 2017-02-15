@@ -3,7 +3,7 @@
 
 # Andorid Studio Predefine .gitignore for Gradel Project
 # ------------------------------------------------------
-#*.iml
+*.iml
 /local.properties
 /.idea/workspace.xml
 /.idea/libraries

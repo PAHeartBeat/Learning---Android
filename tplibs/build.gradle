@@ -24,6 +24,7 @@ String targetFolder = "Pacakge/";  /* Navigate into 'Release folder of the Modul
 // Step 1 end here
 
 android {
+
 	compileSdkVersion 23
 	buildToolsVersion '23.0.3'
 
@@ -66,6 +67,7 @@ android {
 	// Step 2 End Here
 
 	defaultConfig {
+
 		minSdkVersion 15
 		targetSdkVersion 23
 		versionCode 1

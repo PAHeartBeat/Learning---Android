@@ -1,8 +1,5 @@
 apply plugin: 'com.android.application'
-
-// Demo Tutorial Based on: https://www.tutorialspoint.com/android/android_hello_world_example.htm
-// Demo Tutorial Based on: https://www.tutorialspoint.com/android/android_acitivities.htm
-
+// Demo Tutorial Based on: https://www.tutorialspoint.com/android/android_broadcast_receivers.htm
 /*
 Step 1 - Starts
 
@@ -20,7 +17,7 @@ int versionPatch = 0
 int versionBuild = 0
 String versionNumber = "1.0.0.0"
 
-String module = "Hello World"
+String module = "Content Provider Example"
 String deployTaskGroup = "_Output";
 String sourceOutput = "build/outputs/"; /* Default path where APK or AAR output */
 String sourceType = "apk"; /* output type of module which will use to fine compile out put of module and use as ext of output file to copy it release folder */
@@ -29,7 +26,7 @@ String targetFolder = "Pacakge/";  /* Navigate into 'Release folder of the Modul
 
 android {
 	compileSdkVersion 25
-	buildToolsVersion '23.0.2'
+	buildToolsVersion "23.0.3"
 
 	/*
 	Step 2 - Start Here
@@ -70,13 +67,13 @@ android {
 	// Step 2 End Here
 
 	defaultConfig {
-		applicationId "me.paheratbeat.helloworld"
+		applicationId "me.paheratbeat.contentproviderviasqllite"
 
 		minSdkVersion 15
 		targetSdkVersion 25
 		versionCode 1
-		versionName "${versionMajor}.${versionMinor}.${versionPatch}.${versionBuild}"
-		// populate from step 2
+		versionName "${versionMajor}.${versionMinor}.${versionPatch}.${versionBuild}" // populate
+		// from step 2
 	}
 
 	/*
@@ -97,14 +94,12 @@ android {
 	}
 	// Step 3 End here
 
-
 	buildTypes {
 		release {
 			minifyEnabled false
 			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 		}
 	}
-
 	/*
 	Step 4 - Start Here
 
@@ -126,7 +121,6 @@ android {
 		}
 	}
 	// Step 4 End Here
-
 }
 
 dependencies {
@@ -147,6 +141,7 @@ dependencies {
 	//compile project(':tplibs')
 	// Step 5 end Here
 }
+
 
 /*
 Step 6 - Start Here

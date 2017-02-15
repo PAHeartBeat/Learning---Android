@@ -1,1 +1,1 @@
-include ':tplibs', ':helloworld', ':resourceexample', ':serviceexample', ':broadcastreceiverexample'
+include ':tplibs', ':helloworld', ':resourceexample', ':serviceexample', ':broadcastreceiverexample', ':contentproviderviasqllite'

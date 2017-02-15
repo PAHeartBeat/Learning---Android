@@ -67,6 +67,8 @@ android {
 	// Step 2 End Here
 
 	defaultConfig {
+		applicationId "me.paheratbeat.broadcastreceiverexample"
+
 		minSdkVersion 15
 		targetSdkVersion 25
 		versionCode 1

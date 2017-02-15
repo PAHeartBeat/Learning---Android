@@ -67,6 +67,8 @@ android {
 	// Step 2 End Here
 
 	defaultConfig {
+		applicationId "me.paheratbeat.serviceexample"
+
 		minSdkVersion 15
 		targetSdkVersion 25
 		versionCode 1
