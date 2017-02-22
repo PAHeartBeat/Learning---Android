@@ -23,15 +23,14 @@ public class StudentProvider extends ContentProvider {
 	private static final String URL_SCHEME = "content://";
 	private static final String PROVIDER_NAME = "me.paheratbeat.contentproviderviasqllite";
 	private static final String URL = URL_SCHEME + PROVIDER_NAME + "/" + "students";
-	static final Uri CONTENT_URI = Uri.parse(URL);
+	private static final Uri CONTENT_URI = Uri.parse(URL);
 
-	private static final String _ID = "id";
+	private static final String _ID = "_id";
 	private static final String NAME = "name";
 	private static final String GRADE = "grade";
 
 	private static final int STUDENTS = 1;
 	private static final int STUDENT_ID = 2;
-
 
 	private static final String DATABASE_NAME = "Collage";
 	private static final String TABLE_NAME = "Students";
@@ -106,6 +105,7 @@ public class StudentProvider extends ContentProvider {
 			default:
 		}
 
+
 		if (sortOrder == null || sortOrder == "") {
 			/**
 			 * By default sort on student names
@@ -113,8 +113,8 @@ public class StudentProvider extends ContentProvider {
 			sortOrder = NAME;
 		}
 
-		Cursor c = qb.query(db, projection, selection,
-				selectionArgs, null, null, sortOrder);
+
+		Cursor c = qb.query(db, projection, selection, selectionArgs, null, null, sortOrder);
 		/**
 		 * register to watch a content URI for changes
 		 */
@@ -133,7 +133,7 @@ public class StudentProvider extends ContentProvider {
 			case STUDENT_ID:
 				String id = uri.getPathSegments().get(1);
 				count = db.delete(TABLE_NAME, _ID + " = " + id +
-						(!TextUtils.isEmpty(selection) ? " AND(" + selection + ')' : ""),
+								(!TextUtils.isEmpty(selection) ? " AND(" + selection + ')' : ""),
 						selectionArgs);
 				break;
 			default:
@@ -155,7 +155,7 @@ public class StudentProvider extends ContentProvider {
 			case STUDENT_ID:
 				count = db.update(TABLE_NAME, values,
 						_ID + " = " + uri.getPathSegments().get(1) +
-								(!TextUtils.isEmpty(selection) ? " AND ("+ selection + ')' : ""),
+								(!TextUtils.isEmpty(selection) ? " AND (" + selection + ')' : ""),
 						selectionArgs);
 				break;
 			default:

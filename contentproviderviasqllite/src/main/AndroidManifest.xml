@@ -14,7 +14,7 @@
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
-		<provider android:name="StudentProvider"
+		<provider android:name=".StudentProvider"
 		          android:authorities="me.paheratbeat.contentproviderviasqllite"/>
 	</application>
 

@@ -19,13 +19,13 @@ public class MyReceiver extends BroadcastReceiver {
 		Boolean isShow;
 		switch (received) {
 			case "me.paheratbeat.broadcastreceiverexample.FIRST_TEST":
-				toastText = "First Boardcast";
+				toastText = "First Broadcast";
 				break;
 			case "me.paheratbeat.broadcastreceiverexample.SECOND_TEST":
-				toastText = "Second Boardcast";
+				toastText = "Second Broadcast";
 				break;
 			case "me.paheratbeat.broadcastreceiverexample.THIRD_TEST":
-				toastText = "Second Boardcast";
+				toastText = "Second Broadcast";
 				break;
 		}
 		isShow = intent.getExtras().getBoolean("isShow");
