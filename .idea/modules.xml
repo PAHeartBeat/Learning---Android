@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/explicitintentexample/explicitintentexample.iml" filepath="$PROJECT_DIR$/explicitintentexample/explicitintentexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/helloworld/helloworld.iml" filepath="$PROJECT_DIR$/helloworld/helloworld.iml" />
       <module fileurl="file://$PROJECT_DIR$/implicitintentexample/implicitintentexample.iml" filepath="$PROJECT_DIR$/implicitintentexample/implicitintentexample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/intentfilterexample/intentfilterexample.iml" filepath="$PROJECT_DIR$/intentfilterexample/intentfilterexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/resourceexample/resourceexample.iml" filepath="$PROJECT_DIR$/resourceexample/resourceexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/serviceexample/serviceexample.iml" filepath="$PROJECT_DIR$/serviceexample/serviceexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/tplibs/tplibs.iml" filepath="$PROJECT_DIR$/tplibs/tplibs.iml" />

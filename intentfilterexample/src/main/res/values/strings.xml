@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">Intent Filter Example</string>
+	<string name="lbl_main_activity">Intent filter - Main Activity</string>
+	<string name="lbl_custom_browser_activity">Intent filter - Custom Browser</string>
+</resources>

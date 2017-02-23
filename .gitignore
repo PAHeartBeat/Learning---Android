@@ -28,4 +28,5 @@ ref*
 
 # My define to ingore MAC OSX system file
 # ---------------------------------------
+*~
 .DS_Store
