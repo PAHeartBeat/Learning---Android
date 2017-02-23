@@ -10,7 +10,9 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/broadcastreceiverexample" />
             <option value="$PROJECT_DIR$/contentproviderviasqllite" />
+            <option value="$PROJECT_DIR$/explicitintentexample" />
             <option value="$PROJECT_DIR$/helloworld" />
+            <option value="$PROJECT_DIR$/implicitintentexample" />
             <option value="$PROJECT_DIR$/resourceexample" />
             <option value="$PROJECT_DIR$/serviceexample" />
             <option value="$PROJECT_DIR$/tplibs" />

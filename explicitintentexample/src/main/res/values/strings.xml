@@ -1,0 +1,8 @@
+<resources>
+	<string name="app_name">Explicit Intent Example</string>
+	<string name="main_activity_name">Person Basic Info</string>
+	<string name="social_activity_name">Social Network Detail</string>
+	<string name="contact_activity_name">Contact Detail</string>
+	<string name="open_social_button">Open Social Info</string>
+	<string name="open_contact_button">Open Contact Info</string>
+</resources>
