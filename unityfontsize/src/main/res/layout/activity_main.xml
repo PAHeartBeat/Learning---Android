@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/activity_main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	tools:context="me.paheratbeat.unityfontsize.MainActivity">
+
+	<TextView
+		android:id="@+id/tvDesignDP"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+
+		android:layout_alignEnd="@+id/tvFontSizeUnity"
+		android:layout_alignRight="@+id/tvFontSizeUnity"
+
+		android:layout_alignTop="@+id/txtDesignDP"
+		android:layout_alignBottom="@+id/txtDesignDP"
+
+		android:gravity="center"
+		android:text="@string/lbl_tvDesignDP"
+		android:textAlignment="viewStart"/>
+	<EditText
+		android:id="@+id/txtDesignDP"
+
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+
+		android:layout_marginStart="4dp"
+		android:layout_marginLeft="4dp"
+
+		android:layout_toEndOf="@id/tvDesignDP"
+		android:layout_toRightOf="@id/tvDesignDP"
+
+		android:hint="@string/hint_txtDesignDP"
+		android:inputType="number"
+
+		android:maxLength="@string/maxL_txtDesignDP"
+		android:text="@string/value_txtDesignDP"
+		android:textColorHint="@android:color/holo_blue_light"
+		android:textSize="14sp"/>
+
+	<TextView
+		android:id="@+id/tvFontSize"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+
+		android:layout_alignEnd="@+id/tvFontSizeUnity"
+		android:layout_alignRight="@+id/tvFontSizeUnity"
+
+		android:layout_alignTop="@+id/txtFontSizPT"
+		android:layout_alignBottom="@+id/txtFontSizPT"
+
+		android:gravity="center"
+		android:text="@string/lbl_tvFontPT"
+		android:textAlignment="viewStart"/>
+	<EditText
+		android:id="@+id/txtFontSizPT"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+
+		android:layout_below="@id/txtDesignDP"
+		android:layout_marginTop="4dp"
+
+		android:layout_marginStart="4dp"
+		android:layout_marginLeft="4dp"
+
+		android:layout_toEndOf="@id/tvFontSize"
+		android:layout_toRightOf="@id/tvFontSize"
+
+		android:hint="@string/hint_txtFontPT"
+		android:inputType="number"
+
+		android:maxLength="@string/maxL_txtFontPT"
+		android:textColorHint="@android:color/holo_blue_light"
+		android:textSize="14sp"/>
+
+
+	<TextView
+		android:id="@+id/tvUnityCamSize"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+
+		android:layout_alignEnd="@+id/tvFontSizeUnity"
+		android:layout_alignRight="@+id/tvFontSizeUnity"
+
+		android:layout_alignTop="@+id/txtUnityCamSize"
+		android:layout_alignBottom="@+id/txtUnityCamSize"
+
+		android:gravity="center"
+		android:text="@string/lbl_tvUnityCamSize"
+		android:textAlignment="viewStart"/>
+	<EditText
+		android:id="@+id/txtUnityCamSize"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+
+		android:layout_below="@id/txtFontSizPT"
+		android:layout_marginTop="15dp"
+
+		android:layout_marginStart="4dp"
+		android:layout_marginLeft="4dp"
+
+		android:layout_toEndOf="@id/tvFontSize"
+		android:layout_toRightOf="@id/tvFontSize"
+
+		android:hint="@string/hint_txtUnityCamSize"
+		android:inputType="numberDecimal"
+
+		android:maxLength="@string/maxL_txtFontPT"
+		android:text="@string/value_txtUnityCamSize"
+		android:textColorHint="@android:color/holo_blue_light"
+		android:textSize="14sp"/>
+
+	<TextView
+		android:id="@+id/tvDesignBGSize"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+
+		android:layout_alignEnd="@+id/tvFontSizeUnity"
+		android:layout_alignRight="@+id/tvFontSizeUnity"
+
+		android:layout_alignTop="@+id/txtDesignBGSize"
+		android:layout_alignBottom="@+id/txtDesignBGSize"
+
+		android:gravity="center"
+		android:text="@string/lbl_tvDesignBGSize"
+		android:textAlignment="viewStart"/>
+	<EditText
+		android:id="@+id/txtDesignBGSize"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+
+		android:layout_below="@id/txtUnityCamSize"
+
+		android:layout_marginTop="4dp"
+
+		android:layout_marginStart="4dp"
+		android:layout_marginLeft="4dp"
+
+		android:layout_toEndOf="@id/tvDesignBGSize"
+		android:layout_toRightOf="@id/tvDesignBGSize"
+
+		android:hint="@string/hint_txtDesignBGSize"
+		android:inputType="number"
+
+		android:text="@string/value_txtDesignBGSize"
+		android:textColorHint="@android:color/holo_blue_light"
+		android:textSize="14sp"/>
+
+
+	<Button
+		android:id="@+id/btnCalculate"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/txtDesignBGSize"
+		android:layout_marginTop="20dp"
+		android:text="@string/lbl_btnCalculate"/>
+
+
+	<TextView
+		android:id="@+id/tvFontSizeUnity"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+
+		android:layout_below="@id/btnCalculate"
+		android:layout_marginTop="20dp"
+
+		android:gravity="center"
+		android:text="@string/lbl_tvUnityFSPX"
+		android:textAlignment="viewStart"/>
+	<TextView
+		android:id="@+id/tvFontSizeUnityResult"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+
+		android:layout_marginStart="4dp"
+		android:layout_marginLeft="4dp"
+
+		android:layout_toEndOf="@id/tvFontSizeUnity"
+		android:layout_toRightOf="@id/tvFontSizeUnity"
+
+		android:layout_alignTop="@id/tvFontSizeUnity"
+		android:layout_alignBottom="@id/tvFontSizeUnity"
+
+		android:gravity="center"
+		android:text="@string/value_NA"
+		android:textAlignment="viewStart"/>
+
+	<TextView
+		android:id="@+id/tvPxlPUnit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+
+		android:layout_below="@id/tvFontSizeUnity"
+		android:layout_marginTop="10dp"
+
+		android:layout_alignRight="@id/tvFontSizeUnity"
+		android:layout_alignEnd="@id/tvFontSizeUnity"
+
+		android:gravity="center"
+		android:text="@string/lbl_tvPxlPUnit"
+		android:textAlignment="viewStart"/>
+	<TextView
+		android:id="@+id/tvPxlPUnitResult"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+
+		android:layout_marginStart="4dp"
+		android:layout_marginLeft="4dp"
+
+		android:layout_toEndOf="@id/tvPxlPUnit"
+		android:layout_toRightOf="@id/tvPxlPUnit"
+
+		android:layout_alignTop="@id/tvPxlPUnit"
+		android:layout_alignBottom="@id/tvPxlPUnit"
+
+		android:gravity="center"
+		android:text="@string/value_NA"
+		android:textAlignment="viewStart"/>
+</RelativeLayout>

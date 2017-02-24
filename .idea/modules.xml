@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/resourceexample/resourceexample.iml" filepath="$PROJECT_DIR$/resourceexample/resourceexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/serviceexample/serviceexample.iml" filepath="$PROJECT_DIR$/serviceexample/serviceexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/tplibs/tplibs.iml" filepath="$PROJECT_DIR$/tplibs/tplibs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/unityfontsize/unityfontsize.iml" filepath="$PROJECT_DIR$/unityfontsize/unityfontsize.iml" />
     </modules>
   </component>
 </project>

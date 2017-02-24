@@ -17,6 +17,7 @@
             <option value="$PROJECT_DIR$/resourceexample" />
             <option value="$PROJECT_DIR$/serviceexample" />
             <option value="$PROJECT_DIR$/tplibs" />
+            <option value="$PROJECT_DIR$/unityfontsize" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

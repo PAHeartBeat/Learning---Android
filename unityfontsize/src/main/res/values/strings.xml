@@ -1,0 +1,30 @@
+<resources>
+	<string name="app_name">Unity Font Size</string>
+	<string name="lbl_main_name">Calculate Unity Font Size (px)</string>
+	<string name="value_NA">N/A</string>
+
+	<string name="lbl_tvDesignDP">Design DPI (px): </string>
+	<string name="hint_txtDesignDP">Enter DPI of design (px)</string>
+	<string name="value_txtDesignDP">72</string>
+	<string name="maxL_txtDesignDP">4</string>
+
+	<string name="lbl_tvFontPT">Font Size (pt): </string>
+	<string name="hint_txtFontPT">Font size(pt) used in design</string>
+	<string name="maxL_txtFontPT">3</string>
+
+	<string name="lbl_tvUnityCamSize">Unity Cam Size: </string>
+	<string name="hint_txtUnityCamSize">Camera Size in Unity</string>
+	<string name="value_txtUnityCamSize"></string>
+
+	<string name="lbl_tvDesignBGSize">BG Height (px): </string>
+	<string name="hint_txtDesignBGSize">Designed BG Height (px)</string>
+	<string name="value_txtDesignBGSize"></string>
+
+	<string name="lbl_btnCalculate">Calculate Font Size</string>
+
+	<string name="lbl_tvUnityFSPX">Font Size Unity (px): </string>
+	<string name="lbl_tvPxlPUnit">Pixel/Unit: </string>
+
+	<string name="rest_numberOnly" translatable="false">0123456789</string>
+	<string name="rest_numberWithSpace" translatable="false">0123456789 </string>
+</resources>
