@@ -67,7 +67,7 @@ android {
 	// Step 2 End Here
 
 	defaultConfig {
-		applicationId "me.paheratbeat.contentproviderviasqllite"
+		applicationId "me.paheartbeat.learning.contentproviderviasqllite"
 
 		minSdkVersion 15
 		targetSdkVersion 25

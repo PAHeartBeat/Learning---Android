@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="me.paheratbeat.resourceexample">
+	package="me.paheartbeat.learning.resourceexample">
 
 	<application
 		android:allowBackup="true"

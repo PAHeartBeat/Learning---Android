@@ -70,7 +70,7 @@ android {
 	// Step 2 End Here
 
 	defaultConfig {
-		applicationId "me.paheratbeat.helloworld"
+		applicationId "me.paheartbeat.learning.helloworld"
 
 		minSdkVersion 15
 		targetSdkVersion 25

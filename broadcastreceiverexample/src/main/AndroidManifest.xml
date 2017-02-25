@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="me.paheratbeat.broadcastreceiverexample">
+	package="me.paheartbeat.learning.broadcastreceiverexample">
 
 	<application
 		android:allowBackup="true"
@@ -19,8 +19,8 @@
 		<receiver
 			android:name=".MyReceiver">
 			<intent-filter>
-				<action android:name="me.paheratbeat.broadcastreceiverexample.FIRST_TEST" />
-				<action android:name="me.paheratbeat.broadcastreceiverexample.SECOND_TEST" />
+				<action android:name="me.paheartbeat.learning.broadcastreceiverexample.FIRST_TEST" />
+				<action android:name="me.paheartbeat.learning.broadcastreceiverexample.SECOND_TEST" />
 			</intent-filter>
 		</receiver>
 	</application>

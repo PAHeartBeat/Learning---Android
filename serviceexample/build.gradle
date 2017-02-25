@@ -67,7 +67,7 @@ android {
 	// Step 2 End Here
 
 	defaultConfig {
-		applicationId "me.paheratbeat.serviceexample"
+		applicationId "me.paheartbeat.learning.serviceexample"
 
 		minSdkVersion 15
 		targetSdkVersion 25

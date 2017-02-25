@@ -67,7 +67,7 @@ android {
 	// Step 2 End Here
 
 	defaultConfig {
-		applicationId "me.paheratbeat.unityfontsize"
+		applicationId "me.paheartbeat.learning.unityfontsize"
 
 		minSdkVersion 15
 		targetSdkVersion 25

@@ -68,7 +68,7 @@ android {
 	// Step 2 End Here
 
 	defaultConfig {
-		applicationId "me.paheratbeat.implicitintentexample"
+		applicationId "me.paheartbeat.learning.implicitintentexample"
 
 		minSdkVersion 15
 		targetSdkVersion 25
