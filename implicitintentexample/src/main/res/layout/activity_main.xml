@@ -17,82 +17,64 @@
 		android:layout_height="wrap_content"
 		android:layout_alignParentTop="true"
 		android:layout_centerHorizontal="true"
-		android:text="Intent Action View Example"
-		android:textSize="24dp"/>
+		android:text="@string/app_name"
+		android:textSize="24sp"/>
 
-	<TextView
-		android:id="@+id/tvCompany"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_below="@+id/tvTitle"
-		android:layout_centerHorizontal="true"
-		android:layout_marginTop="4dp"
-		android:text="Tutorials point"
-		android:textColor="#ff87ff09"
-		android:textSize="30dp"/>
 
 	<ImageButton
-		android:id="@+id/ibtLogo"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_alignEnd="@+id/tvCompany"
-		android:layout_alignLeft="@+id/tvCompany"
-		android:layout_alignRight="@+id/tvCompany"
-		android:layout_alignStart="@+id/tvCompany"
-		android:layout_below="@+id/tvCompany"
+		android:id="@+id/ibLogo"
 		android:layout_centerHorizontal="true"
-		android:layout_marginTop="4dp"
+
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tvTitle"
+		android:layout_marginTop="5dp"
+
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+
+		android:layout_marginStart="5dp"
+		android:layout_marginEnd="5dp"
+
+		android:src="@drawable/tp_logo_text"
 		android:minHeight="30dp"
-		/>
+		android:maxHeight="150dp"/>
 
 	<Button
 		android:id="@+id/btnStartBrowser"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_alignEnd="@+id/tvCompany"
-		android:layout_alignLeft="@+id/tvCompany"
-		android:layout_alignRight="@+id/tvCompany"
-		android:layout_alignStart="@+id/tvCompany"
-		android:layout_below="@+id/ibtLogo"
+		android:layout_below="@+id/ibLogo"
 		android:layout_marginTop="4dp"
-		android:text="Start Browser"/>
+		android:layout_centerHorizontal="true"
+		android:text="@string/lbl_btnBrowser"/>
 
 	<Button
 		android:id="@+id/btnShowPhone"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_alignEnd="@+id/tvCompany"
-		android:layout_alignLeft="@+id/tvCompany"
-		android:layout_alignRight="@+id/tvCompany"
-		android:layout_alignStart="@+id/tvCompany"
 		android:layout_below="@+id/btnStartBrowser"
 		android:layout_marginTop="2dp"
-		android:text="Start Phone"/>
+		android:layout_centerHorizontal="true"
+		android:text="@string/lbl_btnPhone"/>
 
 	<EditText
-		android:layout_width="wrap_content"
+		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 		android:id="@+id/txtSearch"
 		android:layout_below="@+id/btnShowPhone"
 		android:layout_marginTop="4dp"
 		android:layout_centerHorizontal="true"
-		android:layout_alignLeft="@+id/tvCompany"
-		android:layout_alignStart="@+id/tvCompany"
-		android:layout_alignRight="@+id/tvCompany"
-		android:layout_alignEnd="@+id/tvCompany"
-		android:hint="ID"
+		android:hint="@string/hint_txtSearch"
 		android:textColorHint="@android:color/holo_blue_light"/>
 
 	<Button
 		android:id="@+id/btnSearch"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_alignEnd="@+id/tvCompany"
-		android:layout_alignLeft="@+id/tvCompany"
-		android:layout_alignRight="@+id/tvCompany"
-		android:layout_alignStart="@+id/tvCompany"
 		android:layout_below="@+id/txtSearch"
+		android:layout_centerHorizontal="true"
 		android:layout_marginTop="2dp"
-		android:text="Search"/>
+		android:text="@string/lbl_btnSearch"/>
 
 </RelativeLayout>

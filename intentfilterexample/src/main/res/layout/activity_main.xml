@@ -17,87 +17,62 @@
 		android:layout_height="wrap_content"
 		android:layout_alignParentTop="true"
 		android:layout_centerHorizontal="true"
-		android:text="Intent Filter Example - Main Activity "
-		android:textSize="20dp"/>
-
-	<TextView
-		android:id="@+id/tvCompnayName"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_alignEnd="@+id/tvTitle"
-		android:layout_alignLeft="@+id/tvTitle"
-		android:layout_alignRight="@+id/tvTitle"
-		android:layout_alignStart="@+id/tvTitle"
-		android:layout_below="@+id/tvTitle"
-		android:layout_centerHorizontal="true"
-		android:text="Tutorials point"
-		android:textColor="#ff87ff09"
-		android:textSize="30dp"
-		android:textAlignment="center"/>
+		android:text="@string/lbl_main_activity"
+		android:textSize="20sp"/>
 
 	<ImageButton
 		android:id="@+id/ibLogo"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_alignEnd="@+id/tvCompnayName"
-		android:layout_alignLeft="@+id/tvCompnayName"
-		android:layout_alignRight="@+id/tvCompnayName"
-		android:layout_alignStart="@+id/tvCompnayName"
-		android:layout_below="@+id/tvCompnayName"
 		android:layout_centerHorizontal="true"
+
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tvTitle"
 		android:layout_marginTop="5dp"
-		android:maxHeight="150dp"
-		android:minHeight="30dp"/>
+
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+
+		android:layout_marginStart="5dp"
+		android:layout_marginEnd="5dp"
+
+		android:src="@drawable/tp_logo_text"
+		android:minHeight="30dp"
+		android:maxHeight="150dp"/>
+
 	<EditText
-		android:layout_width="wrap_content"
+		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 		android:id="@+id/txtDomain"
 		android:layout_below="@+id/ibLogo"
 		android:layout_marginTop="4dp"
 		android:layout_centerHorizontal="true"
-		android:layout_alignLeft="@+id/tvCompnayName"
-		android:layout_alignStart="@+id/tvCompnayName"
-		android:layout_alignRight="@+id/tvCompnayName"
-		android:layout_alignEnd="@+id/tvCompnayName"
-		android:hint="enter site address to open"
+		android:hint="@string/hint_txtDomain"
 		android:textColorHint="@android:color/holo_blue_light"/>
 	<Button
 		android:id="@+id/btnOpenBrowser"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_alignEnd="@+id/tvCompnayName"
-		android:layout_alignLeft="@+id/tvCompnayName"
-		android:layout_alignRight="@+id/tvCompnayName"
-		android:layout_alignStart="@+id/tvCompnayName"
 		android:layout_below="@+id/txtDomain"
 		android:layout_centerHorizontal="true"
 		android:layout_marginTop="5dp"
-		android:text="Open Browser"/>
+		android:text="@string/lbl_btnBrowser"/>
 
 	<Button
 		android:id="@+id/btnOpenBrowserWithLaunchOption"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_alignEnd="@+id/tvCompnayName"
-		android:layout_alignLeft="@+id/tvCompnayName"
-		android:layout_alignRight="@+id/tvCompnayName"
-		android:layout_alignStart="@+id/tvCompnayName"
 		android:layout_below="@+id/btnOpenBrowser"
 		android:layout_centerHorizontal="true"
 		android:layout_marginTop="2dp"
-		android:text="Open Browser with Launch Option"/>
+		android:text="@string/lbl_btnBrowserWithLaunch"/>
 
 	<Button
 		android:id="@+id/btnExceptionCase"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_alignEnd="@+id/tvCompnayName"
-		android:layout_alignLeft="@+id/tvCompnayName"
-		android:layout_alignRight="@+id/tvCompnayName"
-		android:layout_alignStart="@+id/tvCompnayName"
 		android:layout_below="@+id/btnOpenBrowserWithLaunchOption"
 		android:layout_centerHorizontal="true"
 		android:layout_marginTop="2dp"
-		android:text="Exceptional Condition"/>
+		android:text="@string/lbl_btnExceptionCondition"/>
 
 </RelativeLayout>

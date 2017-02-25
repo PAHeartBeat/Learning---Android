@@ -1,3 +1,7 @@
 <resources>
 	<string name="app_name">Intent Action View Example</string>
+	<string name="lbl_btnBrowser">Start Browser</string>
+	<string name="lbl_btnPhone">Start Phone</string>
+	<string name="hint_txtSearch">Enter Search Query</string>
+	<string name="lbl_btnSearch">Search</string>
 </resources>

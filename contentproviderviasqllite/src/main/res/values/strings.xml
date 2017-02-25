@@ -1,3 +1,9 @@
 <resources>
 	<string name="app_name">Content Provider via SQLLite</string>
+	<string name="lbl_main_activity">Content Provider Example</string>
+	<string name="hint_txtId">ID</string>
+	<string name="hint_txtName">Name</string>
+	<string name="hint_txtGrade">Grade</string>
+	<string name="lbl_btnAddStudent">Add Student</string>
+	<string name="lbl_btnRetrieveStudent">Retrieve Students</string>
 </resources>

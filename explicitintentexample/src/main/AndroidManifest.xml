@@ -10,7 +10,7 @@
 		android:theme="@style/AppTheme">
 		<activity
 			android:name=".MainActivity"
-			android:label="@string/main_activity_name">
+			android:label="@string/lbl_main_activity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>
 				<category android:name="android.intent.category.LAUNCHER"/>
@@ -18,11 +18,11 @@
 		</activity>
 		<activity
 			android:name=".SocialInfoActivity"
-		    android:label="@string/social_activity_name"
+		    android:label="@string/lbl_social_activity"
 			/>
 		<activity
 			android:name=".ContactInfoActivity"
-		    android:label="@string/contact_activity_name"
+		    android:label="@string/lbl_contact_activity"
 			/>
 	</application>
 </manifest>

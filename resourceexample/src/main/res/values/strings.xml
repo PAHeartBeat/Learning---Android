@@ -2,4 +2,6 @@
 	<string name="app_name">Resource Example</string>
 	<color name="opaque_red">#f00</color>
 	<string name="hello">Hello!</string>
+	<string name="value_tvText">Test Text</string>
+	<string name="lbl_btnHello">Hello, I am a Button</string>
 </resources>

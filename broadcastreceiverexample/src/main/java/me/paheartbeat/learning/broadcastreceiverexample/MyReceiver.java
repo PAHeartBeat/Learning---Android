@@ -11,7 +11,7 @@ public class MyReceiver extends BroadcastReceiver {
 
 	@Override
 	public void onReceive(Context context, Intent intent) {
-		Log.i(TAG, "Broadcast Recevied");
+		Log.i(TAG, "Broadcast Received");
 		final String received = intent.getAction();
 		String toastText = "";
 		String msg;

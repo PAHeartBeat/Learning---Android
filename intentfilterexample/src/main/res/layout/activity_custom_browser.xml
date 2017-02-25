@@ -9,5 +9,5 @@
 	tools:context="me.paheartbeat.learning.intentfilterexample.CustomBrowserActivity">
 	<TextView android:id="@+id/tvAddressBar"
 	          android:layout_width="fill_parent"
-	          android:layout_height="30dp"/>
+	          android:layout_height="fill_parent"/>
 </LinearLayout>

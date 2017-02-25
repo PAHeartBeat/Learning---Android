@@ -2,4 +2,8 @@
 	<string name="app_name">Intent Filter Example</string>
 	<string name="lbl_main_activity">Intent filter - Main Activity</string>
 	<string name="lbl_custom_browser_activity">Intent filter - Custom Browser</string>
+	<string name="hint_txtDomain">Enter site address to open</string>
+	<string name="lbl_btnBrowser">Open Browser</string>
+	<string name="lbl_btnBrowserWithLaunch">Open Browser with launch option</string>
+	<string name="lbl_btnExceptionCondition">Exceptional Condition</string>
 </resources>

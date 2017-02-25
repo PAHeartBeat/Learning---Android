@@ -17,61 +17,43 @@
 		android:layout_height="wrap_content"
 		android:layout_alignParentTop="true"
 		android:layout_centerHorizontal="true"
-		android:text="Explicit Intent Example - Main Activity "
-		android:textSize="20dp"/>
-
-	<TextView
-		android:id="@+id/tvCompnayName"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_alignEnd="@+id/tvTitle"
-		android:layout_alignLeft="@+id/tvTitle"
-		android:layout_alignRight="@+id/tvTitle"
-		android:layout_alignStart="@+id/tvTitle"
-		android:layout_below="@+id/tvTitle"
-		android:layout_centerHorizontal="true"
-		android:text="Tutorials point"
-		android:textColor="#ff87ff09"
-		android:textSize="30dp"
-		android:textAlignment="center"/>
+		android:text="@string/lbl_main_activity"
+		android:textSize="20sp"/>
 
 	<ImageButton
 		android:id="@+id/ibLogo"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_alignEnd="@+id/tvTitle"
-		android:layout_alignLeft="@+id/tvTitle"
-		android:layout_alignRight="@+id/tvTitle"
-		android:layout_alignStart="@+id/tvTitle"
-		android:layout_below="@+id/tvCompnayName"
 		android:layout_centerHorizontal="true"
+
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tvTitle"
 		android:layout_marginTop="5dp"
-		android:maxHeight="150dp"
-		android:minHeight="30dp"/>
+
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+
+		android:layout_marginStart="5dp"
+		android:layout_marginEnd="5dp"
+
+		android:src="@drawable/tp_logo_text"
+		android:minHeight="30dp"
+		android:maxHeight="150dp"/>
 
 	<Button
 		android:id="@+id/btnOpenContactInfo"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_alignEnd="@+id/tvTitle"
-		android:layout_alignLeft="@+id/tvTitle"
-		android:layout_alignRight="@+id/tvTitle"
-		android:layout_alignStart="@+id/tvTitle"
 		android:layout_below="@+id/ibLogo"
 		android:layout_centerHorizontal="true"
 		android:layout_marginTop="5dp"
-		android:text="@string/open_contact_button"/>
+		android:text="@string/lbl_brnContactInfo"/>
 
 	<Button
 		android:id="@+id/btnOpenSocialInfo"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_alignEnd="@+id/tvTitle"
-		android:layout_alignLeft="@+id/tvTitle"
-		android:layout_alignRight="@+id/tvTitle"
-		android:layout_alignStart="@+id/tvTitle"
 		android:layout_below="@+id/btnOpenContactInfo"
 		android:layout_centerHorizontal="true"
 		android:layout_marginTop="2dp"
-		android:text="@string/open_social_button"/>
+		android:text="@string/lbl_btnSocialInfo"/>
 </RelativeLayout>

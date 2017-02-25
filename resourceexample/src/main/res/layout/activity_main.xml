@@ -9,23 +9,52 @@
 	android:paddingRight="@dimen/activity_horizontal_margin"
 	android:paddingTop="@dimen/activity_vertical_margin"
 	tools:context="me.paheartbeat.learning.resourceexample.MainActivity">
+	<TextView
+		android:id="@+id/tvTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:text="@string/app_name"
+		android:textSize="20sp"/>
+
+	<ImageButton
+		android:id="@+id/ibLogo"
+		android:layout_centerHorizontal="true"
+
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tvTitle"
+		android:layout_marginTop="5dp"
+
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+
+		android:layout_marginStart="5dp"
+		android:layout_marginEnd="5dp"
+
+		android:src="@drawable/tp_logo_text"
+		android:minHeight="30dp"
+		android:maxHeight="150dp"/>
 
 	<TextView
 		android:id="@+id/text"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_alignParentLeft="true"
-		android:layout_alignParentStart="true"
-		android:text="Test"
+
+		android:layout_below="@+id/ibLogo"
+		android:layout_marginTop="15dp"
+
+		android:text="@string/value_tvText"
+		android:layout_centerHorizontal="true"
 		android:textColor="@color/opaque_red" />
 
 	<Button
 		android:id="@+id/button"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_alignParentLeft="true"
-		android:layout_alignParentStart="true"
 		android:layout_below="@+id/text"
 		android:layout_marginTop="15dp"
-		android:text="Hello, I am a Button" />
+		android:layout_centerHorizontal="true"
+		android:text="@string/lbl_btnHello" />
 </RelativeLayout>
