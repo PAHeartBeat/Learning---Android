@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/activity_main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	tools:context="me.paheartbeat.learning.localnotification.MainActivity">
+
+	<TextView
+		android:id="@+id/tvTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:text="@string/app_name"
+		android:textSize="30sp"/>
+
+	<ImageButton
+		android:id="@+id/ibLogo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+
+		android:layout_below="@+id/tvTitle"
+		android:src="@drawable/tp_logo_text"
+
+		android:minHeight="30dp"
+		android:maxHeight="150dp"
+
+		android:layout_centerHorizontal="true"
+
+		android:layout_marginTop="5dp"
+
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+
+		android:layout_marginStart="5dp"
+		android:layout_marginEnd="5dp"/>
+
+	<Button
+		android:id="@+id/btnNotifyNowG1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/ibLogo"
+		android:layout_marginTop="15dp"
+		android:layout_centerHorizontal="true"
+		android:text="Notify Now G1" />
+	<Button
+		android:id="@+id/btnNotifyNowG2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/btnNotifyNowG1"
+		android:layout_marginTop="5dp"
+		android:layout_centerHorizontal="true"
+		android:text="Notify Now G2" />
+	<Button
+		android:id="@+id/btnNotifyUnGroup"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/btnNotifyNowG2"
+		android:layout_marginTop="5dp"
+		android:layout_centerHorizontal="true"
+		android:text="Notify UnGrouped" />
+	<Button
+		android:id="@+id/btnNotify"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/btnNotifyUnGroup"
+		android:layout_marginTop="5dp"
+		android:layout_centerHorizontal="true"
+		android:text="Notify" />
+	
+	<Button
+		android:id="@+id/btnClearNotification"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/btnNotify"
+		android:layout_marginTop="5dp"
+		android:layout_centerHorizontal="true"
+		android:text="Clear Notification" />
+
+</RelativeLayout>

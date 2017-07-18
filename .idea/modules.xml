@@ -5,11 +5,13 @@
       <module fileurl="file://$PROJECT_DIR$/Learning.iml" filepath="$PROJECT_DIR$/Learning.iml" />
       <module fileurl="file://$PROJECT_DIR$/broadcastreceiverexample/broadcastreceiverexample.iml" filepath="$PROJECT_DIR$/broadcastreceiverexample/broadcastreceiverexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/contentproviderviasqllite/contentproviderviasqllite.iml" filepath="$PROJECT_DIR$/contentproviderviasqllite/contentproviderviasqllite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customtimerexample/customtimerexample.iml" filepath="$PROJECT_DIR$/customtimerexample/customtimerexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/dragdropexample/dragdropexample.iml" filepath="$PROJECT_DIR$/dragdropexample/dragdropexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/explicitintentexample/explicitintentexample.iml" filepath="$PROJECT_DIR$/explicitintentexample/explicitintentexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/helloworld/helloworld.iml" filepath="$PROJECT_DIR$/helloworld/helloworld.iml" />
       <module fileurl="file://$PROJECT_DIR$/implicitintentexample/implicitintentexample.iml" filepath="$PROJECT_DIR$/implicitintentexample/implicitintentexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/intentfilterexample/intentfilterexample.iml" filepath="$PROJECT_DIR$/intentfilterexample/intentfilterexample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/localnotification/localnotification.iml" filepath="$PROJECT_DIR$/localnotification/localnotification.iml" />
       <module fileurl="file://$PROJECT_DIR$/resourceexample/resourceexample.iml" filepath="$PROJECT_DIR$/resourceexample/resourceexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/serviceexample/serviceexample.iml" filepath="$PROJECT_DIR$/serviceexample/serviceexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/tplibs/tplibs.iml" filepath="$PROJECT_DIR$/tplibs/tplibs.iml" />

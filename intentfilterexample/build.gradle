@@ -18,7 +18,7 @@ int versionPatch = 0
 int versionBuild = 0
 String versionNumber = "1.0.0.0"
 
-String module = "Intent Filter Example"
+String module = "Intent Filter"
 String deployTaskGroup = "_Output";
 String sourceOutput = "build/outputs/"; /* Default path where APK or AAR output */
 String sourceType = "apk"; /* output type of module which will use to fine compile out put of module and use as ext of output file to copy it release folder */
@@ -27,7 +27,7 @@ String targetFolder = "Pacakge/";  /* Navigate into 'Release folder of the Modul
 
 android {
 	compileSdkVersion 25
-	buildToolsVersion "23.0.3"
+	buildToolsVersion "25.0.2"
 
 	/*
 	Step 2 - Start Here

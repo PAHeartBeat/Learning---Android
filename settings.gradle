@@ -1,1 +1,1 @@
-include ':tplibs', ':helloworld', ':resourceexample', ':serviceexample', ':broadcastreceiverexample', ':contentproviderviasqllite', ':implicitintentexample', ':explicitintentexample', ':intentfilterexample', ':unityfontsize', ':dragdropexample'
+include ':tplibs', ':helloworld', ':resourceexample', ':serviceexample', ':broadcastreceiverexample', ':contentproviderviasqllite', ':implicitintentexample', ':explicitintentexample', ':intentfilterexample', ':unityfontsize', ':dragdropexample', ':localnotification', ':customtimerexample'

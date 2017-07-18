@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:custom="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/activity_main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="me.paheartbeat.learning.customtimerexample.MainActivity">
+	
+	<TextView
+		android:id="@+id/tvTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:text="@string/lbl_main_activity"
+		android:textSize="20sp"/>
+	
+	<ImageButton
+		android:id="@+id/ibLogo"
+		android:layout_centerHorizontal="true"
+		
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tvTitle"
+		android:layout_marginTop="5dp"
+		
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		
+		android:layout_marginStart="5dp"
+		android:layout_marginEnd="5dp"
+		
+		android:src="@drawable/tp_logo_text"
+		android:minHeight="30dp"
+		android:maxHeight="150dp"/>
+	
+	<me.paheartbeat.learning.customtimerexample.TimeView
+		android:id="@+id/tmvTimer"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/ibLogo"
+		
+		android:layout_centerHorizontal="true"
+		
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		
+		android:layout_marginStart="5dp"
+		android:layout_marginEnd="5dp"
+		
+		android:layout_marginTop="5dp"
+		
+	    custom:title=""
+	    custom:format="hh:mm:ss tt"
+		/>
+	
+
+
+</RelativeLayout>

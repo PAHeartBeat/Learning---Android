@@ -1,0 +1,185 @@
+apply plugin: 'com.android.application'
+// Demo Tutorial Based on: https://www.tutorialspoint.com/android/android_resources.htm
+/*
+Step 1 - Starts
+
+Added By: Ranpariya Ankur {PAHeartBet} aka nana
+Added On: 2017.02.13
+
+Reason:
+------
+to maintain Auto Incremental Version name as build done and output file naming system
+*/
+
+int versionMajor = 1
+int versionMinor = 0
+int versionPatch = 0
+int versionBuild = 0
+String versionNumber = "1.0.0.0"
+
+String module = "Drag Drop"
+String deployTaskGroup = "_Output";
+String sourceOutput = "build/outputs/"; /* Default path where APK or AAR output */
+String sourceType = "apk"; /* output type of module which will use to fine compile out put of module and use as ext of output file to copy it release folder */
+String targetFolder = "Pacakge/";  /* Navigate into 'Release folder of the Module' */
+// Step 1 end here
+
+android {
+	compileSdkVersion 25
+	buildToolsVersion "25.0.2"
+
+	/*
+	Step 2 - Start Here
+
+	Added By: Ranpariya Ankur {PAHeartBet} aka nana
+	Added On: 2017.02.13
+
+	Reason:
+	-------
+	Getting Last version information for Version.properties file to populate new version number
+	for next time build
+	*/
+	def versionPropsFile = file('version.properties') // Reading File
+	def Properties versionProps = new Properties()
+	versionProps.load(new FileInputStream(versionPropsFile)) // Load file to properties structure
+
+	/* Setting default value for versionBuild which is the last incremented value stored in the file */
+	if (versionPropsFile.canRead()) {
+		versionBuild = versionProps['VERSION_BUILD'].toInteger()
+		versionNumber = versionProps['VERSION_NUMBER'].toString()
+	} else {
+		throw new GradleException("Could not read version.properties!")
+	}
+
+	/* Wrapping inside a method avoids auto incrementing on every gradle task run. Now it runs only when we build apk */
+	ext.autoIncrementBuildNumber = {
+		if (versionPropsFile.canRead()) {
+			versionProps.load(new FileInputStream(versionPropsFile))
+			versionBuild = versionProps['VERSION_BUILD'].toInteger() + 1
+			versionNumber = versionMajor + "." + versionMinor + "." + versionPatch + "." + versionBuild
+			versionProps['VERSION_BUILD'] = versionBuild.toString()
+			versionProps['VERSION_NAME'] = versionNumber
+			versionProps.store(versionPropsFile.newWriter(), null)
+		} else {
+			throw new GradleException("Could not read version.properties!")
+		}
+	}
+	// Step 2 End Here
+
+	defaultConfig {
+		applicationId "me.paheartbeat.learning.dragdropexample"
+
+		minSdkVersion 16
+		targetSdkVersion 25
+		versionCode 1
+		versionName "${versionMajor}.${versionMinor}.${versionPatch}.${versionBuild}"
+		// populate from step 2
+	}
+
+	/*
+	Step 3 - Start Here
+
+	Added By: Ranpariya Ankur {PAHeartBet} aka nana
+	Added On: 2017.02.13
+
+	Reason:
+	-------
+	to Add Version name & version code in Resource file, so it will can usable from there in future
+	if required
+	*/
+	applicationVariants.all { variant ->
+		//libraryVariants.all { variant ->
+		resValue("string", "versionName", defaultConfig.versionName)
+		resValue("string", "versionCode", defaultConfig.versionCode.toString())
+	}
+	// Step 3 End here
+
+	buildTypes {
+		release {
+			minifyEnabled false
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+		}
+	}
+
+	/*
+	Step 4 - Start Here
+
+	Added By: Ranpariya Ankur {PAHeartBet} aka nana
+	Added On: 2017.02.13
+
+	Reason:
+	-------
+	this small codes actully executes the step 3 to update auto increment version system.
+
+	Hook to check if the release/debug task is among the tasks to be executed.
+	Let's make use of it
+	*/
+	gradle.taskGraph.whenReady { taskGraph ->
+		if (taskGraph.hasTask(assembleDebug)) {  /* when run debug task */
+			autoIncrementBuildNumber()
+		} else if (taskGraph.hasTask(assembleRelease)) { /* when run release task */
+			autoIncrementBuildNumber()
+		}
+	}
+	// Step 4 End Here
+}
+
+dependencies {
+	compile fileTree(include: ['*.jar'], dir: 'libs')
+	compile 'com.android.support:appcompat-v7:25.2.0'
+	/*
+		Step 5 - Start Here
+
+		Added By: Ranpariya Ankur {PAHeartBet} aka nana
+		Added On: 2017.02.13
+
+		Reason:
+		-------
+		Line added to use TP plug-in as external code so Unity Developer can use that TP JAR / AAR files
+		form Unity it-self
+		*/
+
+	//compile project(':tplibs')
+
+	// Step 5 end Here
+	compile 'com.google.android.gms:play-services-appindexing:9.8.0'
+}
+
+/*
+Step 6 - Start Here
+
+Added By: Ranpariya Ankur {PAHeartBet} aka nana
+Added On: 2017.02.13
+
+Reason:
+-------
+creating variant vise APK, JAR or AAR file name and maintain in a common folder which is easly
+find by some one
+*/
+android.applicationVariants.all { variant ->
+	//android.libraryVariants.all { variant ->
+	// Task names 'n' dependency
+	String variantName = "${variant.name.capitalize()}"; /* Like 'Debug' */
+	String deployTaskName = "${module}-${variantName}"; /* Like 'Test-deployDebug' */
+	String dependencyTaskName = "assemble${variantName}"; /* Like 'assembleDebug */
+
+	// Source information.
+	String sourceFolder = "${sourceOutput}${sourceType}/";
+	String sourceName = "${project.name}-${variant.name}.${sourceType}";
+
+	// Target information
+	String vName = "${android.defaultConfig.versionName}"; /* version number to add as suffix with time stamp and variant name */
+	String buildTime = "";
+	//buildTime = new Date().format('yyyy.MM.dd.HH.mm.ss'); /* time stamp to add as suffix with version name and variant for identify when this output build */
+	//buildTime = "_ts${buildTime}";
+	String targetName = "${module}_v${vName}${buildTime}-${variantName}.${sourceType}"; /* final compiled file name with version number, build time stamp and build variant*/
+
+	// Create task.
+	task(deployTaskName, dependsOn: dependencyTaskName, type: Copy) {
+		from(sourceFolder)
+		into(targetFolder)
+		include(sourceName)
+		rename(sourceName, targetName)
+	}.group = deployTaskGroup;
+}
+// Step 6 End Here

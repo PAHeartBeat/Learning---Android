@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name">Custom Timer Example</string>
+	<string name="lbl_main_activity">Custom Timer</string>
+</resources>
